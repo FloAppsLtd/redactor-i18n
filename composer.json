@@ -1,0 +1,14 @@
+{
+  "name": "floapps/redactor-i18n",
+  "description": "fi-FI and sv-SE translations for Imperavi Redactor.",
+  "type": "library",
+  "license": "BSD-2-Clause",
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "FloAppsLtd\\RedactorI18n\\": "src/"
+    }
+  }
+}
