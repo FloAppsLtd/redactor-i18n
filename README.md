@@ -1,0 +1,1 @@
+# redactor-i18n
