@@ -8,6 +8,7 @@ class Translations implements ProvidesTranslations
     {
         return array_merge(
             $this->finnishTranslations(),
+            $this->swedishTranslations(),
         );
     }
 
@@ -36,6 +37,8 @@ class Translations implements ProvidesTranslations
                 ],
                 'image' => [
                     'or' => 'tai',
+                    'src' => 'Kuvan url',
+                    'tab-props' => 'Ominaisuudet',
                     'alt-text' => 'Alt-teksti',
                     'link' => 'Linkki',
                     'width' => 'Leveys',
@@ -58,6 +61,14 @@ class Translations implements ProvidesTranslations
                 ],
                 'table' => [
                     'width' => 'Leveys (px tai %)',
+                    'add-table' => 'Lisää taulukko',
+                    'add-caption' => 'Lisää kuvateksti',
+                    'remove-caption' => 'Poista kuvateksti',
+                    'add-head-vertical' => 'Lisää pystyotsikko',
+                    'remove-head-vertical' => 'Poista pystyotsikko',
+                    'merge-cells' => 'Yhdistä solut',
+                    'split-into-columns' => 'Jaa sarakkeisiin',
+                    'split-into-rows' => 'Jaa riveihin',
                     'nowrap' => 'Ei rivitystä',
                     'table-cell' => 'Taulukon solu',
                     'select-table' => 'Valitse taulukko',
@@ -73,7 +84,15 @@ class Translations implements ProvidesTranslations
                     'remove-column' => 'Poista sarake',
                     'delete-table' => 'Poista taulukko',
                 ],
+                'alignment' => [
+                    'alignment' => 'Tasaus',
+                    'center' => 'Keskitä',
+                    'justify' => 'Tasaa',
+                    'left' => 'Vasemmalle',
+                    'right' => 'Oikealle',
+                ],
                 'buttons' => [
+                    'edit' => 'Muokkaa',
                     'add' => 'Lisää',
                     'insert' => 'Syötä',
                     'save' => 'Tallenna',
@@ -125,6 +144,14 @@ class Translations implements ProvidesTranslations
                     'heading' => 'Otsikko',
                     'text' => 'Teksti',
                     'address' => 'Osoite',
+                ],
+                'specialChars' => [
+                    'special-chars' => 'Erikoismerkit',
+                ],
+                'textDirection' => [
+                    'ltr' => 'Vasemmalta oikealle',
+                    'rtl' => 'Oikealta vasemmalle',
+                    'title' => 'Tekstin suunta',
                 ],
                 'colorpicker' => [
                     'remove-color' => 'Poista väri',
@@ -240,6 +267,99 @@ class Translations implements ProvidesTranslations
                     'prompt' => 'Kehote',
                     'image-style' => 'Kuvan tyyli',
                     'change-tone' => 'Vaihda sävyä',
+                ],
+            ]
+        ];
+    }
+
+    private function swedishTranslations(): array
+    {
+        return [
+            'sv' => [
+                'alignment' => [
+                    'alignment' => 'Justering',
+                    'center' => 'Centrera',
+                    'justify' => 'Marginaljustera',
+                    'left' => 'Vänster',
+                    'right' => 'Höger',
+                ],
+                'buttons' => [
+                    'add' => 'Lägg till',
+                    'bold' => 'Fet',
+                    'bullet-list' => 'Punktlista',
+                    'clear-all-styles' => 'Rensa all formatering',
+                    'code' => 'Kod',
+                    'delete' => 'Radera',
+                    'deleted' => 'Raderat',
+                    'edit' => 'Redigera',
+                    'format' => 'Formatera',
+                    'heading' => 'Rubrik',
+                    'highlight' => 'Markera',
+                    'html' => 'HTML',
+                    'image' => 'Bild',
+                    'insert' => 'Infoga',
+                    'italic' => 'Kursiv',
+                    'line' => 'Linje',
+                    'link' => 'Länk',
+                    'list' => 'Lista',
+                    'more-formatting' => 'Mer formatering',
+                    'numbered-list' => 'Numrerad lista',
+                    'quote' => 'Citat',
+                    'redo' => 'Gör om',
+                    'save' => 'Spara',
+                    'subscript' => 'Nedsänkt',
+                    'superscript' => 'Upphöjd',
+                    'table' => 'Tabell',
+                    'text' => 'Text',
+                    'toggle' => 'Växla',
+                    'undo' => 'Ångra',
+                    'wrap-image' => 'Textflöde runt bild',
+                ],
+                'image' => [
+                    'alt-text' => 'Alt text',
+                    'link' => 'Länk',
+                    'link-in-new-tab' => 'Öppna länk i ny flik',
+                    'src' => 'Bildens url',
+                    'tab-props' => 'Egenskaper',
+                    'url-placeholder' => 'Klistra in webbadressen till bilden...',
+                ],
+                'link' => [
+                    'link-in-new-tab' => 'Öppna länk i ny flik',
+                    'text' => 'Text',
+                    'url' => 'URL',
+                ],
+                'specialChars' => [
+                    'special-chars' => 'Specialtecken',
+                ],
+                'table' => [
+                    'add-caption' => 'Lägg till bildtext',
+                    'add-column-after' => 'Lägg till kolumn efter',
+                    'add-column-before' => 'Lägg till kolumn före',
+                    'add-head' => 'Lägg till huvud',
+                    'add-head-vertical' => 'Lägg till vertikalt huvud',
+                    'add-row-above' => 'Lägg till rad ovan',
+                    'add-row-below' => 'Lägg till rad nedan',
+                    'add-table' => 'Lägg till tabell',
+                    'delete-table' => 'Ta bort tabell',
+                    'merge-cells' => 'Slå ihop celler',
+                    'remove-caption' => 'Ta bort bildtext',
+                    'remove-column' => 'Ta bort kolumn',
+                    'remove-head' => 'Ta bort huvud',
+                    'remove-head-vertical' => 'Ta bort vertikalt huvud',
+                    'remove-row' => 'Ta bort rad',
+                    'split-into-columns' => 'Dela i kolumner',
+                    'split-into-rows' => 'Dela i rader',
+                ],
+                'textDirection' => [
+                    'ltr' => 'Vänster till höger',
+                    'rtl' => 'Höger till vänster',
+                    'title' => 'Textriktning',
+                ],
+                'wrap' => [
+                    'wrap-center' => 'Bild centrerad',
+                    'wrap-left' => 'Bild till vänster',
+                    'wrap-none' => 'Inget textflöde',
+                    'wrap-right' => 'Bild till höger',
                 ],
             ]
         ];
