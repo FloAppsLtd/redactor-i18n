@@ -60,6 +60,7 @@ class Translations implements ProvidesTranslations
                     'url' => 'URL',
                 ],
                 'table' => [
+                    'caption-placeholder' => 'Kirjoita kuvateksti...',
                     'width' => 'Leveys (px tai %)',
                     'add-table' => 'Lisää taulukko',
                     'add-caption' => 'Lisää kuvateksti',
@@ -284,6 +285,12 @@ class Translations implements ProvidesTranslations
                     'right' => 'Höger',
                 ],
                 'buttons' => [
+                    'unlink' => 'Ta bort länk',
+                    'indent' => 'Öka indrag',
+                    'outdent' => 'Minska indrag',
+                    'move-up' => 'Flytta upp',
+                    'move-down' => 'Flytta ner',
+                    'duplicate' => 'Duplicera',
                     'add' => 'Lägg till',
                     'bold' => 'Fet',
                     'bullet-list' => 'Punktlista',
@@ -324,6 +331,7 @@ class Translations implements ProvidesTranslations
                     'url-placeholder' => 'Klistra in webbadressen till bilden...',
                 ],
                 'link' => [
+                    'unlink' => 'Ta bort länk',
                     'link-in-new-tab' => 'Öppna länk i ny flik',
                     'text' => 'Text',
                     'url' => 'URL',
@@ -332,6 +340,7 @@ class Translations implements ProvidesTranslations
                     'special-chars' => 'Specialtecken',
                 ],
                 'table' => [
+                    'caption-placeholder' => 'Skriv bildtext...',
                     'add-caption' => 'Lägg till bildtext',
                     'add-column-after' => 'Lägg till kolumn efter',
                     'add-column-before' => 'Lägg till kolumn före',
@@ -360,6 +369,9 @@ class Translations implements ProvidesTranslations
                     'wrap-left' => 'Bild till vänster',
                     'wrap-none' => 'Inget textflöde',
                     'wrap-right' => 'Bild till höger',
+                ],
+                'accessibility' => [
+                    'help-label' => 'Rik textredigerare',
                 ],
             ]
         ];
