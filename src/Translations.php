@@ -92,6 +92,9 @@ class Translations implements ProvidesTranslations
                     'left' => 'Vasemmalle',
                     'right' => 'Oikealle',
                 ],
+                'fullscreen' => [
+                    'fullscreen' => 'Koko näyttö',
+                ],
                 'buttons' => [
                     'edit' => 'Muokkaa',
                     'add' => 'Lisää',
@@ -348,6 +351,9 @@ class Translations implements ProvidesTranslations
                     'justify' => 'Marginaljustera',
                     'left' => 'Vänster',
                     'right' => 'Höger',
+                ],
+                'fullscreen' => [
+                    'fullscreen' => 'Helskärm',
                 ],
                 'buttons' => [
                     'cancel' => 'Avbryt',
